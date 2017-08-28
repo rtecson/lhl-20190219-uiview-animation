@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="w6d2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -28,11 +28,20 @@
                                     <segue destination="h1y-sv-xqy" kind="show" id="lTT-ts-rbI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="US9-lQ-VJt">
+                                <rect key="frame" x="243.5" y="172" width="179" height="30"/>
+                                <state key="normal" title="Animation with Autolayout"/>
+                                <connections>
+                                    <segue destination="VH6-Sj-uRT" kind="show" id="fHJ-3E-KZR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5uV-Tz-1dE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="95C-F3-6pO"/>
+                            <constraint firstItem="US9-lQ-VJt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AcH-T4-0Re"/>
                             <constraint firstItem="5uV-Tz-1dE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Z4O-p7-1gy"/>
+                            <constraint firstItem="US9-lQ-VJt" firstAttribute="top" secondItem="5uV-Tz-1dE" secondAttribute="bottom" constant="38" id="qOc-5n-dbt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fFT-Pt-h9T"/>
@@ -79,6 +88,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IHd-0n-j1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2015" y="-546"/>
+        </scene>
+        <!--Test2 View Controller-->
+        <scene sceneID="Gby-ia-EjT">
+            <objects>
+                <viewController id="VH6-Sj-uRT" customClass="Test2ViewController" customModule="w6d2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PBH-1U-bfO"/>
+                        <viewControllerLayoutGuide type="bottom" id="81n-Kj-3AS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bey-xv-dY1">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoY-36-oYt">
+                                <rect key="frame" x="243.5" y="337" width="179" height="30"/>
+                                <state key="normal" title="Test Autolayout Animation"/>
+                                <connections>
+                                    <action selector="testButtonTapped:" destination="VH6-Sj-uRT" eventType="touchUpInside" id="Z5a-kg-e35"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4NJ-4J-owX" userLabel="boxView">
+                                <rect key="frame" x="10" y="100" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.27252209509999997" blue="0.117369407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FkO-Ma-OHy"/>
+                                    <constraint firstAttribute="height" constant="100" id="VtD-Tc-YCm" userLabel="boxViewHeightConstraint"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WoY-36-oYt" firstAttribute="centerX" secondItem="Bey-xv-dY1" secondAttribute="centerX" id="1rI-g3-o2p"/>
+                            <constraint firstItem="4NJ-4J-owX" firstAttribute="leading" secondItem="Bey-xv-dY1" secondAttribute="leading" constant="10" id="2Sa-Kn-4mS" userLabel="boxViewLeadingConstraint"/>
+                            <constraint firstItem="81n-Kj-3AS" firstAttribute="top" secondItem="WoY-36-oYt" secondAttribute="bottom" constant="8" id="gqm-Ml-cPW"/>
+                            <constraint firstItem="4NJ-4J-owX" firstAttribute="top" secondItem="PBH-1U-bfO" secondAttribute="bottom" constant="36" id="l8t-Pb-4k0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boxView" destination="4NJ-4J-owX" id="jj2-Kg-0cp"/>
+                        <outlet property="boxViewHeightConstraint" destination="VtD-Tc-YCm" id="asC-Hy-gk6"/>
+                        <outlet property="boxViewLeadingConstraint" destination="2Sa-Kn-4mS" id="akb-pB-Ko1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jre-17-Vik" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015" y="343"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bce-pD-fMj">

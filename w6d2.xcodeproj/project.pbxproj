@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A57BCCC1F54CCE700056540 /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A57BCCB1F54CCE700056540 /* Test2ViewController.swift */; };
 		2A7664D51F54B36300BD55CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7664D41F54B36300BD55CF /* AppDelegate.swift */; };
 		2A7664D71F54B36300BD55CF /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7664D61F54B36300BD55CF /* Test1ViewController.swift */; };
 		2A7664DA1F54B36300BD55CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7664D81F54B36300BD55CF /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A57BCCB1F54CCE700056540 /* Test2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
 		2A7664D11F54B36300BD55CF /* w6d2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = w6d2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7664D41F54B36300BD55CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A7664D61F54B36300BD55CF /* Test1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				2A7664D41F54B36300BD55CF /* AppDelegate.swift */,
 				2A7664D61F54B36300BD55CF /* Test1ViewController.swift */,
+				2A57BCCB1F54CCE700056540 /* Test2ViewController.swift */,
 				2A7664D81F54B36300BD55CF /* Main.storyboard */,
 				2A7664DB1F54B36300BD55CF /* Assets.xcassets */,
 				2A7664DD1F54B36300BD55CF /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A7664D71F54B36300BD55CF /* Test1ViewController.swift in Sources */,
+				2A57BCCC1F54CCE700056540 /* Test2ViewController.swift in Sources */,
 				2A7664D51F54B36300BD55CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +308,7 @@
 				2A7664E51F54B36300BD55CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
