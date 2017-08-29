@@ -38,12 +38,12 @@ extension Test2ViewController {
 extension Test2ViewController {
     
     fileprivate func test1() {
-        // Set desired values for after animation
+        // Set desired values for after animation (end state)
         boxViewLeadingConstraint.constant = 200
         boxViewHeightConstraint.constant = 200
         
         UIView.animate(withDuration: 3, animations: { 
-            // Animate layoutIfNeeded
+            // Need to animate layoutIfNeeded() in order to animate autolayout changes
             self.view.layoutIfNeeded()
         }) { (finished: Bool) in
             // Completion and cleanup
