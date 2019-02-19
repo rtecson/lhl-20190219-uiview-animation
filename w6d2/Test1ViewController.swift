@@ -29,8 +29,7 @@ extension Test1ViewController {
         boxView.backgroundColor = UIColor.red
         
         // Calculate end X coordinate
-        let viewWidth = view.bounds.width
-        let endX = viewWidth - 100 - 10
+        let endX = view.bounds.width - 100 - 10
         
         UIView.animate(withDuration: 3, animations: {
             // Values for end state of animation
@@ -48,12 +47,11 @@ extension Test1ViewController {
         boxView.backgroundColor = UIColor.red
         
         // Calculate end X coordinate
-        let viewWidth = view.bounds.width
-        let endX = viewWidth - 100 - 10
+        let endX = view.bounds.width - 100 - 10
 
         // Change delay and options to try different animation options (.curveLinear,
         // .curveEaseIn, .curveEaseOut, curveEaseInOut, .repeat, .autoReverse)
-        UIView.animate(withDuration: 3, delay: 2, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 1, delay: 1, options: [.repeat], animations: {
             // Values for end state of animation
             self.boxView.frame = CGRect(x: endX, y: self.boxView.frame.minY, width: self.boxView.frame.width, height: self.boxView.frame.height)
         }) { (finished: Bool) in
@@ -69,10 +67,9 @@ extension Test1ViewController {
         boxView.backgroundColor = UIColor.red
         
         // Calculate end X coordinate
-        let viewWidth = view.bounds.width
-        let endX = viewWidth - 100 - 10
+        let endX = view.bounds.width - 100 - 10
 
-        UIView.animate(withDuration: 8, delay: 0, usingSpringWithDamping: 0.25, initialSpringVelocity: 5, options: [], animations: {
+        UIView.animate(withDuration: 4, delay: 0, usingSpringWithDamping: 0.25, initialSpringVelocity: 2, options: [], animations: {
             // Values for end state of animation
             self.boxView.frame = CGRect(x: endX, y: self.boxView.frame.minY, width: self.boxView.frame.width, height: self.boxView.frame.height)
         }) { (finished: Bool) in
@@ -89,8 +86,7 @@ extension Test1ViewController {
         boxView.alpha = 1.0
         
         // Calculate end X coordinate
-        let viewWidth = view.bounds.width
-        let endX = viewWidth - 100 - 10
+        let endX = view.bounds.width - 100 - 10
         
         UIView.animateKeyframes(withDuration: 6.0, delay: 0.0, options: [], animations: {
             // Setup keyframes

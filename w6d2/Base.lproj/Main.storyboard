@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="imn-D6-efk">
-    <device id="retina4_7" orientation="landscape">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="imn-D6-efk">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,18 +19,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uV-Tz-1dE">
-                                <rect key="frame" x="248" y="104" width="171" height="30"/>
+                                <rect key="frame" x="102" y="104" width="171" height="30"/>
                                 <state key="normal" title="Simple UIView Animation"/>
                                 <connections>
                                     <segue destination="h1y-sv-xqy" kind="show" id="lTT-ts-rbI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="US9-lQ-VJt">
-                                <rect key="frame" x="243.5" y="172" width="179" height="30"/>
+                                <rect key="frame" x="98" y="172" width="179" height="30"/>
                                 <state key="normal" title="Animation with Autolayout"/>
                                 <connections>
                                     <segue destination="VH6-Sj-uRT" kind="show" id="fHJ-3E-KZR"/>
@@ -59,11 +60,11 @@
                         <viewControllerLayoutGuide type="bottom" id="1MZ-nH-40v"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jCb-C8-sAj">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t67-9o-Ipf">
-                                <rect key="frame" x="256.5" y="325" width="154" height="30"/>
+                                <rect key="frame" x="110.5" y="617" width="154" height="30"/>
                                 <state key="normal" title="Test UIView Animation"/>
                                 <connections>
                                     <action selector="testButtonTapped:" destination="h1y-sv-xqy" eventType="touchUpInside" id="58e-aG-UrQ"/>
@@ -98,29 +99,40 @@
                         <viewControllerLayoutGuide type="bottom" id="81n-Kj-3AS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bey-xv-dY1">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoY-36-oYt">
-                                <rect key="frame" x="243.5" y="337" width="179" height="30"/>
+                                <rect key="frame" x="98" y="629" width="179" height="30"/>
                                 <state key="normal" title="Test Autolayout Animation"/>
                                 <connections>
                                     <action selector="testButtonTapped:" destination="VH6-Sj-uRT" eventType="touchUpInside" id="Z5a-kg-e35"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4NJ-4J-owX" userLabel="boxView">
-                                <rect key="frame" x="10" y="100" width="100" height="100"/>
+                                <rect key="frame" x="265" y="100" width="100" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDY-p7-AwW">
+                                        <rect key="frame" x="25" y="25.5" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.27252209509999997" blue="0.117369407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="FkO-Ma-OHy"/>
+                                    <constraint firstItem="NDY-p7-AwW" firstAttribute="centerY" secondItem="4NJ-4J-owX" secondAttribute="centerY" id="Ilr-yY-NHT"/>
+                                    <constraint firstItem="NDY-p7-AwW" firstAttribute="width" secondItem="4NJ-4J-owX" secondAttribute="width" multiplier="0.5" id="RCT-Hk-j7L"/>
                                     <constraint firstAttribute="height" constant="100" id="VtD-Tc-YCm" userLabel="boxViewHeightConstraint"/>
+                                    <constraint firstItem="NDY-p7-AwW" firstAttribute="height" secondItem="4NJ-4J-owX" secondAttribute="height" multiplier="0.5" id="ke8-lh-gpg"/>
+                                    <constraint firstItem="NDY-p7-AwW" firstAttribute="centerX" secondItem="4NJ-4J-owX" secondAttribute="centerX" id="sgw-6K-Xz2"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WoY-36-oYt" firstAttribute="centerX" secondItem="Bey-xv-dY1" secondAttribute="centerX" id="1rI-g3-o2p"/>
-                            <constraint firstItem="4NJ-4J-owX" firstAttribute="leading" secondItem="Bey-xv-dY1" secondAttribute="leading" constant="10" id="2Sa-Kn-4mS" userLabel="boxViewLeadingConstraint"/>
+                            <constraint firstItem="4NJ-4J-owX" firstAttribute="leading" secondItem="Bey-xv-dY1" secondAttribute="leading" priority="1" constant="10" id="2Sa-Kn-4mS" userLabel="boxViewLeadingConstraint"/>
+                            <constraint firstAttribute="trailing" secondItem="4NJ-4J-owX" secondAttribute="trailing" priority="999" constant="10" id="Ptf-mg-aWj" userLabel="boxViewTrailingConstraint"/>
                             <constraint firstItem="81n-Kj-3AS" firstAttribute="top" secondItem="WoY-36-oYt" secondAttribute="bottom" constant="8" id="gqm-Ml-cPW"/>
                             <constraint firstItem="4NJ-4J-owX" firstAttribute="top" secondItem="PBH-1U-bfO" secondAttribute="bottom" constant="36" id="l8t-Pb-4k0"/>
                         </constraints>
@@ -129,11 +141,12 @@
                         <outlet property="boxView" destination="4NJ-4J-owX" id="jj2-Kg-0cp"/>
                         <outlet property="boxViewHeightConstraint" destination="VtD-Tc-YCm" id="asC-Hy-gk6"/>
                         <outlet property="boxViewLeadingConstraint" destination="2Sa-Kn-4mS" id="akb-pB-Ko1"/>
+                        <outlet property="boxViewTrailingConstraint" destination="Ptf-mg-aWj" id="hM4-1Q-YXU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jre-17-Vik" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2015" y="343"/>
+            <point key="canvasLocation" x="2013.5999999999999" y="342.27886056971516"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bce-pD-fMj">
@@ -141,7 +154,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="imn-D6-efk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Naf-7t-QJK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

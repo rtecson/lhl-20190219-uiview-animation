@@ -13,6 +13,7 @@ class Test2ViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var boxView: UIView!
     @IBOutlet weak var boxViewLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var boxViewTrailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var boxViewHeightConstraint: NSLayoutConstraint!
     
     // MARK: - IBActions
@@ -28,8 +29,6 @@ extension Test2ViewController {
         super.viewDidLoad()
 
         // Set initial values before animation
-        boxViewLeadingConstraint.constant = 10
-        boxViewHeightConstraint.constant = 100
         boxView.backgroundColor = UIColor.red
     }
 }
@@ -39,10 +38,11 @@ extension Test2ViewController {
     
     fileprivate func test1() {
         // Set desired values for after animation (end state)
-        boxViewLeadingConstraint.constant = 200
-        boxViewHeightConstraint.constant = 200
+//        boxViewHeightConstraint.constant = 200
+        boxViewLeadingConstraint.priority = UILayoutPriority(rawValue: 999)
+        boxViewTrailingConstraint.priority = UILayoutPriority(rawValue: 1)
         
-        UIView.animate(withDuration: 3, animations: { 
+        UIView.animate(withDuration: 1, animations: {
             // Need to animate layoutIfNeeded() in order to animate autolayout changes
             self.view.layoutIfNeeded()
         }) { (finished: Bool) in
